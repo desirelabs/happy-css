@@ -1,5 +1,5 @@
 {
-  "name": "happy-css",
+  "name": "@desirelabs/happy-css",
   "version": "0.0.1",
   "description": "An essential lightweight and modular frontend framework.",
   "main": "index.js",
