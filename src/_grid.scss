@@ -1,0 +1,28 @@
+@import "mixins";
+@import "variables";
+
+.hap_container {
+  max-width: 1140px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+}
+.hap_container_lg {
+  @extend .hap_container
+}
+.hap_grid {
+  min-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  .hap_cell {
+    flex-grow: 1;
+    padding: 0 var(--base-spacing);
+    @for $i from 1 through 12 {
+      &_#{$i} {
+        @extend .hap_cell;
+        @include cellWidth($i);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "happy-css",
+  "version": "0.0.1",
+  "description": "An essential lightweight and modular frontend framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "sass src/index.scss dist/index.css --watch",
+    "build": "sass src/index.scss:dist/index.min.css src/_grid.scss:dist/grid.min.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desirelabs/happy-css.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "framework"
+  ],
+  "author": "Franck LEBAS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desirelabs/happy-css/issues"
+  },
+  "homepage": "https://github.com/desirelabs/happy-css#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}

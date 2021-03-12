@@ -1,0 +1,4 @@
+@mixin cellWidth($index) {
+  min-width: percentage((100 / 12 * $index) / 100);
+  max-width: percentage((100 / 12 * $index) / 100);
+}
